@@ -7,7 +7,7 @@ window.siteProjects = [
     categoryLabel: "PERSONA",
     description: "일상과 아이디어를 기록하고, 나만의 생각을 차곡차곡 정리하는 도구.",
     status: "계속 다듬는 중",
-    url: "https://naru.vercel.app",
+    url: "https://naru-jaby.vercel.app",
     repository: "https://github.com/eduicms7-cyber/naru",
     visual: "visual-naru",
     symbol: "✳",
