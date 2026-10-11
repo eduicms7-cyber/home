@@ -569,6 +569,61 @@ button {
   font-size: 10px;
 }
 
+.stories-section {
+  padding-top: 118px;
+  padding-bottom: 125px;
+}
+
+.story-card {
+  display: block;
+  border: 1px solid #e6e7e0;
+  border-radius: 12px;
+  padding: 27px 29px 25px;
+  background: #fbfbf9;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.story-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9d0b5;
+}
+
+.story-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #85877f;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.story-card h3 {
+  max-width: 760px;
+  margin: 22px 0 10px;
+  font-size: clamp(19px, 2.5vw, 25px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1.55;
+}
+
+.story-card > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.story-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 25px;
+  color: #5e7630;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .about-section {
   padding-top: 117px;
   padding-bottom: 125px;
@@ -804,6 +859,15 @@ button {
   .interests-inner {
     display: grid;
     gap: 31px;
+  }
+
+  .stories-section {
+    padding-top: 88px;
+    padding-bottom: 94px;
+  }
+
+  .story-card {
+    padding: 22px 20px;
   }
 
   .interest-list {
