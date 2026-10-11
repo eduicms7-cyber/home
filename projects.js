@@ -53,5 +53,30 @@ window.siteProjects = [
         description: "학생·교사 가입과 승인, 학교 밖 학생 지원을 추가하고 수업과 모둠 설계 기능을 시작했습니다."
       }
     ]
+  },
+  {
+    id: "togather-3c",
+    name: "togather-3c",
+    category: "education",
+    categoryLabel: "EDUCATION",
+    description: "XY 게임 수업을 운영하는 프로그램, 함께의 기술 3C.",
+    status: "기능을 확장하는 중",
+    url: "https://togather-3c.vercel.app",
+    repository: "https://github.com/eduicms7-cyber/togather-3c",
+    workLogUrl: "https://github.com/eduicms7-cyber/togather-3c/tree/main/docs/worklog",
+    visual: "visual-education",
+    symbol: "◎",
+    logs: [
+      {
+        date: "2026.10.11",
+        title: "교사 구글 로그인과 공유 데이터베이스 구조",
+        description: "교사 구글 로그인과 인증 후 앱으로 돌아오는 경로를 추가하고, 교육용 앱들이 함께 쓰는 Supabase 프로젝트에 로그인만 공유하는 구조로 바꿨습니다."
+      },
+      {
+        date: "2026.09.27",
+        title: "교사용 사용 설명서와 교실 점검표",
+        description: "교사용 사용 설명서와 휴대폰·교실 점검표를 만들고 빌드를 확인했습니다."
+      }
+    ]
   }
 ];
