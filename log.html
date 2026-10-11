@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f7f4" />
+    <title>작업일지 — 작업실</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="projects.js" defer></script>
+    <script src="log.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="작업실 홈">
+        <span class="wordmark-mark" aria-hidden="true">j.</span>
+        <span>작업실</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="./#projects">만드는 것</a>
+        <a href="./#interests">관심 분야</a>
+        <a href="./#about">소개</a>
+      </nav>
+      <a class="header-link" href="./#projects">전체 작업 보기 <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="log-main section-wrap">
+      <a class="back-link" href="./#projects"><span aria-hidden="true">←</span> 전체 프로젝트</a>
+      <section id="log-content" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="./">
+        <span class="wordmark-mark" aria-hidden="true">j.</span>
+        <span>작업실</span>
+      </a>
+      <span>만드는 과정을 기록합니다.</span>
+      <a href="./#projects" class="back-to-top">프로젝트 보기 ↑</a>
+    </footer>
+  </body>
+</html>
