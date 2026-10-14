@@ -78,5 +78,30 @@ window.siteProjects = [
         description: "교사용 사용 설명서와 휴대폰·교실 점검표를 만들고 빌드를 확인했습니다."
       }
     ]
+  },
+  {
+    id: "moa",
+    name: "Moa",
+    category: "education",
+    categoryLabel: "EDUCATION",
+    description: "togather-3c와 ent-tool의 회원 관리·수업·활동·모둠 기능을 하나로 모은 교실 수업 통합 프로그램.",
+    status: "배포를 시작한 단계",
+    url: "https://moa7.vercel.app",
+    repository: "https://github.com/eduicms7-cyber/moa",
+    workLogUrl: "https://github.com/eduicms7-cyber/moa/tree/main/docs/worklog",
+    visual: "visual-education",
+    symbol: "✦",
+    logs: [
+      {
+        date: "2026.10.13",
+        title: "배포와 약관·개인정보 동의, 비밀번호 찾기",
+        description: "moa7.vercel.app에 배포하고, 이용약관·개인정보 처리방침 동의 화면과 비밀번호 찾기·바꾸기를 추가했습니다. 3C(XY 게임)와 창업체험 7단계 모듈도 옮겨 왔습니다."
+      },
+      {
+        date: "2026.10.12",
+        title: "두 앱을 합친 통합 설계와 공통 기능",
+        description: "두 앱을 비교해 통합 설계안을 만들고, 로그인·교사 승인·학생 가입, 수업과 1분마다 바뀌는 참여 코드, 모둠 편성, 활동 열고 닫기 기능을 만들었습니다."
+      }
+    ]
   }
 ];
