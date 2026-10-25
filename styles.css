@@ -832,6 +832,156 @@ button {
   line-height: 1.6;
 }
 
+.curriculum-theme {
+  font-weight: 600;
+}
+
+.fact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 0 0;
+}
+
+.fact-list div {
+  border: 1px solid #e6e7e0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  background: #fbfbf9;
+}
+
+.fact-list dt {
+  margin-bottom: 4px;
+  color: #85877f;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+.fact-list dd {
+  margin: 0;
+  color: #33352f;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.step-list {
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step-card {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 24px;
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+}
+
+.step-when {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #73756e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.step-when .library-num {
+  color: #5e7630;
+  font-weight: 500;
+}
+
+.step-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+.step-card p {
+  margin: 0 0 12px;
+  color: #4f514b;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.step-output strong {
+  margin-right: 8px;
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.step-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.step-tags span {
+  border-radius: 99px;
+  padding: 2px 10px;
+  background: #eef5d6;
+  color: #46581f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.step-detail {
+  margin-top: 6px;
+  border: 1px solid #e6e7e0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: #fbfbf9;
+}
+
+.step-detail summary {
+  color: #5e7630;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.step-detail ul {
+  margin: 12px 0 10px;
+  padding-left: 18px;
+  color: #4f514b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.step-detail li + li {
+  margin-top: 6px;
+}
+
+.step-detail p {
+  margin: 0;
+  color: #85877f;
+  font-size: 13px;
+}
+
+.competency-grid h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.competency-grid p {
+  color: #5f615a;
+}
+
+.page-note {
+  max-width: 900px;
+  margin: 0;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  color: #85877f;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1133,6 +1283,16 @@ button {
 
   .stage-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .competency-grid,
+  .fact-list {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .hero {
