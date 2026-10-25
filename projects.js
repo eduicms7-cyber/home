@@ -9,9 +9,15 @@ window.siteProjects = [
     status: "계속 다듬는 중",
     url: "https://naru-jaby.vercel.app",
     repository: "https://github.com/eduicms7-cyber/naru",
+    workLogUrl: "https://github.com/eduicms7-cyber/naru/blob/master/docs/%EC%9E%91%EC%97%85%EC%9D%BC%EC%A7%80.md",
     visual: "visual-naru",
     symbol: "✳",
     logs: [
+      {
+        date: "2026.10.15",
+        title: "로그인 계정 표시와 v1.0.28",
+        description: "지금 로그인한 계정의 이메일을 PC·웹에서는 사이드바 아래에, 휴대폰에서는 오늘 탭 위쪽에 보여 주도록 했습니다. 이 변경을 담은 클라우드 앱 v1.0.28을 내놓았습니다."
+      },
       {
         date: "2026.08.23",
         title: "할 일과 지식 보관함, 이미지 첨부 개선",
@@ -92,6 +98,26 @@ window.siteProjects = [
     visual: "visual-education",
     symbol: "✦",
     logs: [
+      {
+        date: "2026.10.25",
+        title: "서비스 데이터베이스 점검",
+        description: "지금까지 만든 기능에 필요한 데이터베이스 변경이 실제 서비스에 모두 반영됐는지 하나씩 확인했습니다."
+      },
+      {
+        date: "2026.10.19",
+        title: "새 모둠 활동 「왜? 다섯 번」",
+        description: "문제의 원인을 '왜?'라고 다섯 번 물으며 찾아 내려가는 모둠 활동을 만들었습니다. 어느 단계에서나 고를 수 있고, 활동 기록은 학생 포트폴리오에도 남습니다."
+      },
+      {
+        date: "2026.10.18",
+        title: "수업 설계표, 활동 카드, 학생 포트폴리오",
+        description: "교사가 창업체험 8단계의 활동 카드를 골라 차시별로 수업을 설계하는 기능을 만들었습니다. 수업마다 학생별 포트폴리오와 관찰 메모, 세특 초안을 쓰는 화면도 더했습니다."
+      },
+      {
+        date: "2026.10.16",
+        title: "늦게 들어온 학생의 모둠 참여 문제 해결",
+        description: "활동을 시작한 뒤 모둠이 새로 생기면 그 모둠 학생들이 활동에 들어가지 못하던 문제를 고쳤습니다. 이제 새 모둠도 1단계부터 함께할 수 있습니다."
+      },
       {
         date: "2026.10.13",
         title: "배포와 약관·개인정보 동의, 비밀번호 찾기",
