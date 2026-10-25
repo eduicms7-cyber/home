@@ -19,7 +19,8 @@
 
 | 페이지 | 파일 | 내용을 채우는 곳 |
 |---|---|---|
-| 창업체험교육 | `entrepreneurship.html` | 페이지 안의 "준비 중" 칸 |
+| 창업체험교육(입구) | `entrepreneurship.html` | 운영 형태 카드, 공통 자료(역량·기법·평가) |
+| └ 교과융합 「내일을 여는 내 일」 | `entrepreneurship-convergence.html` | 8단계 커리큘럼 |
 | 진로교육 | `career.html` | 페이지 안의 "준비 중" 칸 |
 | 두빛나래 | `dubitnarae.html` | `dubitnarae.js`의 팀 목록(사진은 `images/dubitnarae/`) |
 
