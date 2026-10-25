@@ -55,6 +55,7 @@ button {
 
 .wordmark {
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 10px;
   font-size: 14px;
@@ -98,6 +99,11 @@ button {
 .project-log-link:hover,
 .back-to-top:hover {
   color: #78952c;
+}
+
+.main-nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .header-link {
@@ -687,6 +693,211 @@ button {
   font-size: 13px;
 }
 
+.library-section {
+  padding-top: 118px;
+  padding-bottom: 40px;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.library-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e7e0;
+  border-radius: 12px;
+  padding: 27px 26px 25px;
+  background: #fbfbf9;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.library-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9d0b5;
+}
+
+.library-num {
+  color: #85877f;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.library-card h3 {
+  margin: 20px 0 10px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+.library-card > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.library-card ul {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  color: #4f514b;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.library-card li::before {
+  content: "— ";
+  color: #9bbb43;
+}
+
+.library-card .story-link {
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+.page-section {
+  max-width: 900px;
+  border-top: 1px solid var(--line);
+  padding: 44px 0 52px;
+}
+
+.page-section > .eyebrow {
+  margin-bottom: 12px;
+}
+
+.page-section h2 {
+  margin: 0 0 14px;
+  font-size: clamp(24px, 3vw, 30px);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 1.4;
+}
+
+.page-section > p {
+  max-width: 720px;
+  margin: 0 0 16px;
+  color: #4f514b;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.placeholder-box {
+  margin-top: 22px;
+  border: 1px dashed #cfd1c6;
+  border-radius: 12px;
+  padding: 22px 24px;
+  color: #85877f;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.placeholder-box strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #5f615a;
+  font-weight: 700;
+}
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stage-grid li {
+  min-height: 112px;
+  border: 1px solid #e6e7e0;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fbfbf9;
+}
+
+.stage-grid .library-num {
+  display: block;
+  margin-bottom: 10px;
+  color: #5e7630;
+}
+
+.stage-grid p {
+  margin: 0;
+  color: #92948c;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.team-grid > .placeholder-box {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+.page-section .filter-list {
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.filter-list[hidden] {
+  display: none;
+}
+
+.team-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-top: 12px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.team-card {
+  border: 1px solid #e6e7e0;
+  border-radius: 12px;
+  padding: 22px 24px;
+  background: #fbfbf9;
+}
+
+.team-card .story-meta {
+  font-size: 11px;
+}
+
+.team-card h3 {
+  margin: 14px 0 6px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+.team-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.team-award {
+  display: inline-block;
+  margin-top: 12px;
+  border-radius: 99px;
+  padding: 3px 11px;
+  background: var(--lime);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .essay {
   max-width: 720px;
 }
@@ -892,12 +1103,36 @@ button {
   }
 
   .main-nav {
+    flex: 1;
     gap: 17px;
+    margin-left: 18px;
+    overflow-x: auto;
     font-size: 12px;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .main-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .header-link {
     display: none;
+  }
+
+  .library-section {
+    padding-top: 88px;
+    padding-bottom: 20px;
+  }
+
+  .library-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .stage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero {

@@ -15,6 +15,16 @@
 
 기존 프로그램의 상세 작업일지를 따로 관리하고 있다면 `workLogUrl`을 지정해 해당 문서로 연결할 수 있습니다. 새 카테고리를 만들면 `index.html`의 카테고리 필터에도 `data-filter` 버튼을 추가합니다. 메뉴 이름이나 관심 분야 문구는 `index.html`에서 바꿀 수 있습니다. 함께 나눈 이야기의 기사 카드는 `index.html`의 `stories-section`에 추가합니다.
 
+## 교육 자료실 페이지
+
+| 페이지 | 파일 | 내용을 채우는 곳 |
+|---|---|---|
+| 창업체험교육 | `entrepreneurship.html` | 페이지 안의 "준비 중" 칸 |
+| 진로교육 | `career.html` | 페이지 안의 "준비 중" 칸 |
+| 두빛나래 | `dubitnarae.html` | `dubitnarae.js`의 팀 목록(사진은 `images/dubitnarae/`) |
+
+첫 화면의 `library-section`에서 세 페이지로 연결됩니다.
+
 ## 빠진 작업일지 점검하기
 
 각 프로젝트의 `docs/작업일지.md`를 GitHub에서 읽어, `projects.js`에 아직 없는 날짜를 보여 줍니다. 맥·윈도우 모두 같은 명령입니다.
