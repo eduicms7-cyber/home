@@ -513,6 +513,8 @@ button {
 .project-actions {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 12px;
   gap: 21px;
   margin-top: 22px;
 }

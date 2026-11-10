@@ -1,4 +1,5 @@
 // 새 프로젝트나 작업일지를 추가할 때 이 목록을 편집하세요.
+// 사용 설명서가 있으면 manualUrl을 넣으면 카드와 작업일지 화면에 링크가 표시됩니다.
 window.siteProjects = [
   {
     id: "naru",
@@ -70,6 +71,7 @@ window.siteProjects = [
     url: "https://togather-3c.vercel.app",
     repository: "https://github.com/eduicms7-cyber/togather-3c",
     workLogUrl: "https://github.com/eduicms7-cyber/togather-3c/tree/main/docs/worklog",
+    manualUrl: "https://github.com/eduicms7-cyber/togather-3c/blob/main/docs/manual.md",
     visual: "visual-education",
     symbol: "◎",
     logs: [

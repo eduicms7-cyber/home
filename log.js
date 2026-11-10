@@ -69,6 +69,15 @@
     links.append(fullLog);
   }
 
+  if (project.manualUrl) {
+    const manual = document.createElement("a");
+    manual.href = project.manualUrl;
+    manual.target = "_blank";
+    manual.rel = "noopener noreferrer";
+    manual.textContent = "사용 설명서 보기 ↗";
+    links.append(manual);
+  }
+
   const repository = document.createElement("a");
   repository.href = project.repository;
   repository.target = "_blank";

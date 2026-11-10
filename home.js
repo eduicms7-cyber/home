@@ -54,6 +54,16 @@
       logLink.innerHTML = '작업일지 <span aria-hidden="true">→</span>';
 
       actions.append(appLink, logLink);
+
+      if (project.manualUrl) {
+        const manualLink = document.createElement("a");
+        manualLink.className = "project-log-link";
+        manualLink.href = project.manualUrl;
+        manualLink.target = "_blank";
+        manualLink.rel = "noopener noreferrer";
+        manualLink.innerHTML = '사용 설명서 <span aria-hidden="true">↗</span>';
+        actions.append(manualLink);
+      }
       content.append(meta, title, description, actions);
       card.append(visual, content);
       grid.append(card);
