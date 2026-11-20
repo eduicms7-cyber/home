@@ -1,8 +1,27 @@
 (() => {
   const params = new URLSearchParams(window.location.search);
-  const project = window.siteProjects.find((item) => item.id === params.get("id"));
+  const team = (window.dubitnaraeTeams || []).find(
+    (item) => item.id && item.id === params.get("team")
+  );
+  const project = team
+    ? {
+        name: team.item.split(" — ")[0],
+        categoryLabel: `두빛나래 · ${team.team} · ${team.year}`,
+        description: team.description,
+        logs: team.logs || [],
+        workLogUrl: team.workLogUrl,
+        manualUrl: team.manualUrl,
+        repository: team.repository
+      }
+    : window.siteProjects.find((item) => item.id === params.get("id"));
   const container = document.querySelector("#log-content");
   const heading = document.querySelector("title");
+
+  if (team) {
+    const back = document.querySelector(".back-link");
+    back.href = "dubitnarae.html";
+    back.innerHTML = '<span aria-hidden="true">←</span> 두빛나래';
+  }
 
   if (!project) {
     heading.textContent = "프로젝트를 찾을 수 없습니다 — 작업실";
@@ -78,11 +97,13 @@
     links.append(manual);
   }
 
-  const repository = document.createElement("a");
-  repository.href = project.repository;
-  repository.target = "_blank";
-  repository.rel = "noopener noreferrer";
-  repository.textContent = "프로젝트 저장소 ↗";
-  links.append(repository);
-  container.append(links);
+  if (project.repository) {
+    const repository = document.createElement("a");
+    repository.href = project.repository;
+    repository.target = "_blank";
+    repository.rel = "noopener noreferrer";
+    repository.textContent = "프로젝트 저장소 ↗";
+    links.append(repository);
+  }
+  if (links.children.length > 0) container.append(links);
 })();

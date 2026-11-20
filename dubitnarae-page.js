@@ -63,6 +63,14 @@
           card.append(award);
         }
 
+        if (team.id && team.logs && team.logs.length > 0) {
+          const logLink = document.createElement("a");
+          logLink.className = "story-link";
+          logLink.href = `log.html?team=${encodeURIComponent(team.id)}`;
+          logLink.innerHTML = '작업일지 보기 <span aria-hidden="true">→</span>';
+          card.append(logLink);
+        }
+
         grid.append(card);
       });
   };
